@@ -9,7 +9,6 @@ export const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-
     useEffect(() => {
         setIsLoading(true);
         getProducts()

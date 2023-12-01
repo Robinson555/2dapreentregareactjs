@@ -9,6 +9,7 @@
     width: 100%;
     border-radius: 30px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .mainLogo{
@@ -64,7 +65,6 @@
         background-size: cover;
         background-position: center;
         color: rgba(17, 229, 162, 0.436);
-        border-radius: 80%;
         text-decoration: none;
    }
 

@@ -15,12 +15,7 @@ const products = [
     { id: "14", name: "Zapato hombre", img: "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BGHZ_STG/on/demandware.static/-/Sites-master-catalog-tricot/default/dw3dbe600d/images/large/MD410973.jpg?sw=1000&sh=1000&sm=fit", price: 3700, category: "calzado", description: "Zapato mocasin casual gamuza", stock: 1 },
     { id: "15", name: "Zapatilla infantil", img: "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BGHZ_STG/on/demandware.static/-/Sites-master-catalog-tricot/default/dwf6d42b56/images/large/PD411011.jpg?sw=1000&sh=1000&sm=fit", price: 6980, category: "calzado", description: "zapatilla infantil unisex", stock: 3 },
     { id: "16", name: "Zapatilla", img: "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BGHZ_STG/on/demandware.static/-/Sites-master-catalog-tricot/default/dw33db5673/images/large/MD415657.jpg?sw=1000&sh=1000&sm=fit", price: 7800, category: "calzado", description: "Zapatilla Juvenil Mujer Negra", stock: 8 },
-    
-
-    
-
-
-];  
+];
 
 export const getProducts = () => {
     return new Promise((resolve, rejects) => {
