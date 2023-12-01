@@ -1,40 +1,50 @@
-import { CardWidget } from "../CardWidget/CardWidget";
+import { Link } from "react-router-dom";
+import { CartWidget } from "../CartWidget/CartWidget";
 import "./navbar.css";
 
 export const NavBar = () => {
     return (
-        <section className="mainNav">
-            <div className="mainLogo">
-                <article className="mainImagen">
-                    <img src="img/logo.png" alt="Logo" height={45} width={45} />
-                </article>
-                <article className="mainNomLog"> M&M </article>
-            </div>
-            <div className="barraNav">
-                <article>
-                    <ul>
-                        <li className="itemNav">
-                            <a href="#"> Moda Hombre </a>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/">
+                    <img src="img/logo.png" alt="Logo" height={45} width={45} />M&M
+                </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav me-auto">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">
+                                Home
+                            </Link>
                         </li>
-                        <li className="itemNav">
-                            <a href="#"> Moda Mujer </a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/category/hombre">
+                                Moda Hombre
+                            </Link>
                         </li>
-                        <li className="itemNav">
-                            <a href="#"> Moda Infantil </a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/category/mujer">
+                                Moda Mujer
+                            </Link>
                         </li>
-                        <li className="itemNav">
-                            <a href="#"> Todo Calzado </a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/category/infantil">
+                                Moda Infantil
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/category/calzado">
+                                Todo Calzado
+                            </Link>
                         </li>
                     </ul>
-                </article>
+                    <Link className="nav-link" to="/cart">
+                        <CartWidget />
+                    </Link>
+                </div>
             </div>
-            <div className="navCarrito">
-                <article>
-                    <a href="">
-                        <CardWidget />
-                    </a>
-                </article>
-            </div>
-        </section>
+        </nav>
     );
 };
